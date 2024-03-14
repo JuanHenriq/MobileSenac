@@ -309,9 +309,10 @@ br.clear {
   clear: both;
 }
 
-#mobile-nav{
+#mobile-footer{
 	display: none;
 }
+
 
 hr {
   position: relative;
@@ -625,6 +626,10 @@ hr:after {
 }
 
 @media screen and (max-width: 1680px) {
+
+  #mobile-nav{
+    display: none;
+  }
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -1355,7 +1360,7 @@ hr:after {
 
 @media screen and (max-width: 840px) {
 
-	#mobile-nav{
+	#mobile-footer{
 		display: none;
 	}
 
@@ -2539,7 +2544,7 @@ body.homepage.is-preload #header:after {
 @media screen and (max-width: 1680px) {
 
 
-	#mobile-nav{
+	#mobile-footer{
 		display: none;
 	}
 
@@ -2835,8 +2840,28 @@ body.homepage.is-preload #header:after {
     margin-bottom: 2em;
   }
 
+
   #mobile-nav {
+
+  position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #1c0920;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	padding: 10px 0;
+	z-index: 10001;
+
+  }
+
+  #mobile-footer {
 	position: fixed;
+  border-radius: 20px 20px 0px 0px;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -2848,7 +2873,7 @@ body.homepage.is-preload #header:after {
 	z-index: 10001;
   }
   
-  .mobile-nav-link {
+  .mobile-footer-link {
 	color: #fff;
 	text-decoration: none;
 	display: flex;
@@ -2857,7 +2882,7 @@ body.homepage.is-preload #header:after {
 	font-size: 20px;
   }
   
-  .mobile-nav-link i {
+  .mobile-footer-link i {
 	margin-bottom: 5px;
   }
 }
