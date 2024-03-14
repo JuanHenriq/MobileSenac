@@ -2854,9 +2854,9 @@ body.homepage.is-preload #header:after {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 	align-items: center;
 	background-color: rgb(255, 255, 255);
-	padding: 10px 0;
-	z-index: 10001;
-
+	padding: 10px;
+	z-index: 10001; 
+  margin-bottom: 10px;
   }
 
   #mobile-footer {
