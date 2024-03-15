@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
-@import url("fontawesome-all.min.css");
 
 /*
 	Helios by HTML5 UP
@@ -2855,8 +2854,7 @@ body.homepage.is-preload #header:after {
 	align-items: center;
 	background-color: rgb(255, 255, 255);
 	padding: 10px;
-	z-index: 10001; 
-  margin-bottom: 10px;
+	z-index: 10001;
   }
 
   #mobile-footer {
