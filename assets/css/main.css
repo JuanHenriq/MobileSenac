@@ -1,6 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600displayswap");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 @import url("fontawesome-all.min.css");
 
+
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'),
+    url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
+      format('woff2');
+  font-display: swap;
+}
 
 html,
 body,
@@ -1901,7 +1911,7 @@ header > p {
   width: 100%;
 }
 
-.image.featured{
+.image.featured {
   display: block;
   width: 100%;
   margin: 0 0 4em 0;
@@ -2880,5 +2890,14 @@ body.homepage.is-preload #header:after {
   
   .mobile-footer-link i {
 	margin-bottom: 5px;
+  }
+  @font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'),
+      url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
+        format('woff2');
+    font-display: swap;
   }
 }
