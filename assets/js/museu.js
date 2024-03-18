@@ -1,7 +1,8 @@
 let map, infoWindow;
 
 function initMap() {
-  if(map) return;
+  if (map) return;
+
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: -34.397, lng: 150.644 },
     zoom: 16,
@@ -66,3 +67,8 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+// Adicione esta linha no final do arquivo
+window.addEventListener('pageshow', function(event) {
+  initMap();
+});
