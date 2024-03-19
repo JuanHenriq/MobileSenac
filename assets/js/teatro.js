@@ -36,7 +36,7 @@ function initMap() {
     handleLocationError(false, infoWindow, map.getCenter());
   }
 
-  fetch("https://juanhenriq.github.io/api-mobile-map/museu.json")
+  fetch("https://juanhenriq.github.io/api-mobile-map/teatro.json")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((item) => {
@@ -54,7 +54,6 @@ function initMap() {
               <p>Bairro: ${item.bairro}</p>
               <p>Logradouro: ${item.logradouro}</p>
               <p>Telefone: ${item.telefone || "N/A"}</p>
-              <p>Site: ${item.site || "N/A"}</p>
             </div>
           `;
 
