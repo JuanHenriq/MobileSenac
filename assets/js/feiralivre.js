@@ -21,8 +21,12 @@ function initMap() {
           position: pos,
           map: map,
           icon: {
-            url: "person.svg",
-          },
+            path: google.maps.SymbolPath.CIRCLE,
+            fillColor: 'purple',
+            fillOpacity: 1,
+            scale: 10,
+            strokeWeight: 2
+          }
         });
 
         infoWindow.setPosition(pos);
