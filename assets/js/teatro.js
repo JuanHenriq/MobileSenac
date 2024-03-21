@@ -24,7 +24,7 @@ function initMap() {
             path: google.maps.SymbolPath.CIRCLE,
             fillColor: 'purple',
             fillOpacity: 1,
-            scale: 15,
+            scale: 10,
             strokeWeight: 1
           }
         });
