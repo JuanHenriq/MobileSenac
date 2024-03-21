@@ -21,12 +21,8 @@ function initMap() {
           position: pos,
           map: map,
           icon: {
-            path: google.maps.SymbolPath.CIRCLE,
-            fillColor: 'purple',
-            fillOpacity: 1,
-            scale: 15,
-            strokeWeight: 1
-          }
+            url: "assets/icon/marker.svg",
+          },
         });
 
         infoWindow.setPosition(pos);
@@ -40,23 +36,25 @@ function initMap() {
     handleLocationError(false, infoWindow, map.getCenter());
   }
 
-  fetch("https://juanhenriq.github.io/api-mobile-map/feira_livre.json")
+  fetch("https://juanhenriq.github.io/api-mobile-map/museu.json")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((item) => {
         const marker = new google.maps.Marker({
-          position: { lat: item.Latitude, lng: item.Longitude },
+          position: { lat: item.latitude, lng: item.longitude },
           map: map,
-          title: item.Nome,
+          title: item.nome,
         });
 
         marker.addListener("click", () => {
           const content = `
             <div>
-              <h3>${item.Nome}</h3>
-              <p>Localização: ${item.Localização}</p>
-              <p>Dias: ${item.Dias}</p>
-              <p>Horário: ${item.Horário || "N/A"}</p>
+              <h3>${item.nome}</h3>
+              <p>${item.descricao}</p>
+              <p>Bairro: ${item.bairro}</p>
+              <p>Logradouro: ${item.logradouro}</p>
+              <p>Telefone: ${item.telefone || "N/A"}</p>
+              <p>Site: ${item.site || "N/A"}</p>
             </div>
           `;
 
