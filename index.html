@@ -7,13 +7,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<meta content="" name="home screen">
-    <meta content="" name="keywords">
-	<meta name="description" content="Bem-vindo ao 'Te Chega!', o seu guia completo para explorar Recife. Descubra as praias paradisíacas, mergulhe na rica história cultural nos museus, viva a emoção no teatro e experimente a tradição nas feiras livres.">
-
+	<meta content="" name="keywords">
+	<meta name="description"
+		content="Bem-vindo ao 'Te Chega!', o seu guia completo para explorar Recife. Descubra as praias paradisíacas, mergulhe na rica história cultural nos museus, viva a emoção no teatro e experimente a tradição nas feiras livres.">
+	<link rel="manifest" href="manifest.json" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
-	<link rel="preload" href="images/home_banner.webp" as="image"/>
+	<link rel="preload" href="images/home_banner.webp" as="image" />
 </head>
 
 <div id="mobile-nav">
@@ -179,21 +180,21 @@
 
 			<div id="mobile-footer">
 				<a href="index.html" class="mobile-footer-link">
-				  <img src="assets/icon/house.png" alt="home" class="custom-icon">
+					<img src="assets/icon/house.png" alt="home" class="custom-icon">
 				</a>
 				<a href="left-sidebar.html" class="mobile-footer-link">
-				  <img src="assets/icon/praia.png" alt="praia" class="custom-icon">
+					<img src="assets/icon/praia.png" alt="praia" class="custom-icon">
 				</a>
 				<a href="museu.html" class="mobile-footer-link">
-				  <img src="assets/icon/museu.png" alt="museu" class="custom-icon">
+					<img src="assets/icon/museu.png" alt="museu" class="custom-icon">
 				</a>
 				<a href="teatro.html" class="mobile-footer-link">
-				  <img src="assets/icon/teatro.png" alt="teatro" class="custom-icon">
+					<img src="assets/icon/teatro.png" alt="teatro" class="custom-icon">
 				</a>
 				<a href="feira.html" class="mobile-footer-link">
-				  <img src="assets/icon/barraca.png" alt="feira" class="custom-icon">
+					<img src="assets/icon/barraca.png" alt="feira" class="custom-icon">
 				</a>
-			  </div>
+			</div>
 		</div>
 
 		<!-- Scripts -->
@@ -205,6 +206,9 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script> if (typeof navigator.serviceWorker !== 'undefined') {
+				navigator.serviceWorker.register('sw.js')
+			}</script>
 
 </body>
 
