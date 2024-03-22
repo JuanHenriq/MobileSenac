@@ -14,25 +14,25 @@
             "purpose": "any maskable"
         },
         {
-            "src":"72android.png",
+            "src":"android/72android.png",
             "sizes": "72x72",
             "type": "image/png",
             "purpose": "any maskable"
         },
         {
-            "src":"96android.png",
+            "src":"android/96android.png",
             "sizes": "96x96",
             "type": "image/png",
             "purpose": "any maskable"
         },
         {
-            "src":"144android.png",
+            "src":"android/144android.png",
             "sizes": "144x144",
             "type": "image/png",
             "purpose": "any maskable"
         },
         {
-            "src":"192android.png",
+            "src":"android/192android.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "any maskable"
