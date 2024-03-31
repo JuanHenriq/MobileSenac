@@ -1,6 +1,5 @@
 const CACHE_NAME = 'TeChega';
-
-// Add whichever assets you want to precache here:
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 const PRECACHE_ASSETS = [
   './index.html',
   './artigo-um.html',
@@ -70,6 +69,14 @@ const PRECACHE_ASSETS = [
   './android/android-launchericon-512-512.png',
 
 ]
+
+
+for (let i = 0; i < PRECACHE_ASSETS.length; i++) {
+  // Verifique se o arquivo existe
+  if (!fileExists(PRECACHE_ASSETS[i])) {
+    console.log(`O arquivo ${PRECACHE_ASSETS[i]} não existe.`);
+  }
+}
 
 // Listener for the install event - precaches our assets list on service worker install.
 self.addEventListener('install', event => {
